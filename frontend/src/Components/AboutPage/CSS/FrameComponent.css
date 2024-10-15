@@ -1,0 +1,51 @@
+.bienvelope-fill-icon,
+.bilinkedin-icon,
+.phinstagram-logo-fill-icon {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 48px;
+}
+.icons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.madelyn-torff-2021 {
+  position: relative;
+}
+.footer-icons,
+.madelyn-torff-2021-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.madelyn-torff-2021-wrapper {
+  flex-direction: row;
+  padding: 0 var(--padding-5xl);
+}
+.footer-icons {
+  width: 192px;
+  flex-direction: column;
+  gap: var(--gap-13xl);
+  margin-top: 30px;
+}
+.footer-icons-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--font-medium-emphasis);
+  font-family: var(--font-nunito);
+}

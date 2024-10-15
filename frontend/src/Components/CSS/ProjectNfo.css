@@ -1,0 +1,96 @@
+.text3,
+.text4,
+.text5 {
+  position: relative;
+  line-height: 150%;
+}
+.text3 {
+  margin: 0;
+  align-self: stretch;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+}
+.text4,
+.text5 {
+  font-size: var(--body-18-size);
+}
+.text4 {
+  align-self: stretch;
+  font-family: var(--font-nunito);
+  color: var(--font-medium-emphasis);
+}
+.text5 {
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--font-high-emphasis);
+  text-align: center;
+  display: inline-block;
+  min-width: 102px;
+}
+.boto-secudrio {
+  cursor: pointer;
+  border: 1px solid var(--font-high-emphasis);
+  padding: var(--padding-7xs) var(--padding-4xl);
+  background-color: transparent;
+  border-radius: var(--br-5xl);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.boto-secudrio:hover {
+  background-color: var(--color-dimgray-200);
+  border: 1px solid var(--color-dimgray-100);
+  box-sizing: border-box;
+}
+.project-nfo,
+.text-parent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.text-parent {
+  width: 406.7px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.project-nfo {
+  flex: 0.8468;
+  background-color: var(--bg-white);
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: var(--padding-127xl-5) var(--padding-19xl) var(--padding-126xl-5);
+  box-sizing: border-box;
+  min-width: 322px;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--font-high-emphasis);
+  font-family: var(--title-h2);
+  margin-top: 20px;
+}
+@media screen and (max-width: 1050px) {
+  .text3 {
+    font-size: var(--font-size-13xl);
+    line-height: 48px;
+  }
+  .project-nfo {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .project-nfo {
+    padding-top: var(--padding-76xl);
+    padding-bottom: var(--padding-76xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .text3 {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+}

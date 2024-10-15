@@ -1,0 +1,120 @@
+.madelyn-torff {
+    position: relative;
+    line-height: 180%;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  .sobre {
+    text-decoration: none;
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 52px;
+  }
+  .tab-active-child {
+    align-self: stretch;
+    height: 2px;
+    position: relative;
+    border-radius: var(--br-11xs);
+    background-color: var(--font-high-emphasis);
+  }
+  .tab-active {
+    width: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-11xs);
+  }
+  .sobre1 {
+    text-decoration: none;
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 69px;
+  }
+  .tab-default {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+  .sobre2 {
+    text-decoration: none;
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+    color: inherit;
+    display: inline-block;
+    min-width: 75px;
+    cursor: pointer;
+  }
+  .tab-default1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .nav {
+    margin: 0;
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--body-18-size);
+    color: var(--font-high-emphasis);
+    font-family: var(--body-18);
+  }
+  .header,
+  .nav,
+  .nav-wrapper {
+    display: flex;
+    align-items: flex-start;
+  }
+  .nav-wrapper {
+    width: 292px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--padding-11xs) 0 0;
+    box-sizing: border-box;
+  }
+  .header {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    padding: var(--padding-xs) var(--padding-xl) var(--padding-3xs);
+    gap: var(--gap-884xl);
+    text-align: left;
+    font-size: var(--body-18-size);
+    color: var(--font-high-emphasis);
+    font-family: var(--font-comfortaa);
+  }
+  @media screen and (max-width: 1200px) {
+    .header {
+      gap: var(--gap-432xl);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .header {
+      gap: var(--gap-207xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .nav {
+      display: none;
+    }
+    .nav-wrapper {
+      width: 0;
+    }
+    .header {
+      flex-direction: row;
+      gap: var(--gap-111xl);
+    }
+  }

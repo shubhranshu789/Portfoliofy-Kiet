@@ -1,0 +1,280 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+.ProjectDeleteBtn{
+  background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ResumeProjects{
+  margin-left: 20px;
+}
+
+
+.ResumeAchievements{
+  margin-left: 20px;
+}
+
+
+.ResumeAchievementsul {
+  display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.ResumeAchievements {
+  margin: 20px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.ResumeAchievementsul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievementItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 0; */
+  /* border-bottom: 1px solid #ddd; */
+  gap: 40px;
+  /* height: 5px; */
+
+}
+
+.achievementItem span {
+  /* flex: 1; Ensures the span takes up as much space as possible */
+}
+
+.achievementItem button {
+  /* background-color: #ff4d4f; */
+  color: rgb(255, 0, 0);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: white;
+
+}
+
+.achievementItem button:hover {
+  background-color: #d0e2ff;
+}
+
+
+.deletebtn{
+  color: red;
+  background: red;
+}
+
+
+
+  .line {
+    width: 98%;
+    height: 2px;
+    background-color: #333; /* Adjust color as needed */
+    margin-bottom: 5px; /* Space below the line */
+  }
+  
+  
+  h2 {
+    color: #444;
+    font-size: 24px;
+    margin: 0px;
+    display: flex;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #222;
+  }
+  
+  .name {
+    margin-left: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 60px; */
+    flex-direction: column;
+    align-items: start;
+    height: 80px;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    display: flex;
+    justify-content: start;
+    /* background-color: #e3e3e3; */
+    /* padding: 10px; */
+    border-radius: 5px;
+    /* margin: 20px 0; */
+    height: 40px;
+    gap: 50px;
+    margin-left: 20px;
+  }
+  
+  .github-profile {
+    /* text-align: center; */
+    /* margin: 20px 0; */
+    display: flex;
+    margin-left: 20px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+  
+  .github-profile span {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .education {
+    margin-left: 20px;
+  }
+  
+  .eduTable table {
+    width: 98%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  /* .eduTable th, .eduTable td {
+    padding: 4px;
+    text-align: left;
+    border: 1px solid #ddd;
+  } */
+  
+  
+  .eduTable th, .eduTable td {
+    padding: 4px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .eduTable td {
+    border-bottom: 1px solid #ddd; /* Optional: Border for rows */
+    text-align: center;
+  }
+  
+  .eduTable .yearCol {
+    width: 10%; /* Adjust width for Year column */
+    text-align: center;
+  }
+  
+  .eduTable .degreeCol {
+    width: 10%; /* Adjust width for Degree/Certificate column */
+    text-align: center;
+
+  }
+  
+  .eduTable .instituteCol {
+    width: 30%; /* Adjust width for Institute column */
+    text-align: center;
+
+  }
+  
+  .eduTable .percentageCol {
+    width: 5%; /* Adjust width for Percentage column */
+    text-align: center;
+
+  }
+  
+  .eduTable .actionCol {
+    width: 10%; /* Adjust width for Action column (Delete button) */
+    text-align: center;
+
+  }
+  
+
+  .technical-skills, .extra-curricular {
+    margin-left: 20px;
+  }
+  
+  .technical-skills ul, .extra-curricular ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2px;
+  }
+  
+  li {
+    margin: 0px 0;
+    display: flex;
+    /* list-style-position: inside; */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .name {
+      margin-left: 20px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .github-profile {
+      margin-left: 20px;
+      text-align: center;
+    }
+  
+    .education {
+      margin-left: 20px;
+    }
+  
+    .eduTable table {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .technical-skills, .extra-curricular {
+      margin-left: 20px;
+    }
+  
+    .technical-skills ul, .extra-curricular ul {
+      margin-left: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    .contact-info p, .github-profile p {
+      font-size: 14px;
+    }
+  
+    .eduTable th, .eduTable td {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .technical-skills ul li, .extra-curricular ul li {
+      font-size: 14px;
+    }
+  }
+  

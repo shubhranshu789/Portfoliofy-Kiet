@@ -1,0 +1,183 @@
+.title {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    line-height: 72px;
+    font-weight: 700;
+    font-family: inherit;
+    
+  }
+  .text,
+  .text1 {
+    position: relative;
+    line-height: 150%;
+  }
+  .text {
+    align-self: stretch;
+    font-size: 24px;
+    font-family: var(--font-nunito);
+    color: var(--font-medium-emphasis);
+  }
+  .text1 {
+    font-size: var(--body-18-size);
+    font-weight: 500;
+    font-family: var(--font-roboto);
+    color: var(--font-high-emphasis);
+    text-align: left;
+    display: inline-block;
+    min-width: 66px;
+  }
+  .button-primary,
+  .frame-wrapper,
+  .title-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .button-primary {
+    cursor: pointer;
+    border: 0;
+    padding: 8px var(--padding-5xl);
+    background-color: var(--brand-yellow);
+    border-radius: 8px;
+    flex-direction: row;
+  }
+  .button-primary:hover {
+    background-color: #c99103;
+  }
+  .frame-wrapper,
+  .title-parent {
+    flex-direction: column;
+  }
+  .title-parent {
+    align-self: stretch;
+    gap: var(--gap-13xl);
+  }
+  .frame-wrapper {
+    width: 588px;
+    padding: 86px 0 0;
+    box-sizing: border-box;
+    min-width: 588px;
+    max-width: 100%;
+  }
+  .bg-2-child,
+  .pexels-artem-beliaikin-1832323-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-2-child {
+    border-radius: 50%;
+    background-color: var(--brand-yellow);
+  }
+  .pexels-artem-beliaikin-1832323-icon {
+    border-radius: 600px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .bg-2 {
+    height: 524px;
+    width: 524px;
+    position: relative;
+    min-width: 524px;
+    max-width: 100%;
+  }
+  .frame-group {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .about-simple-footer-inner,
+  .frame-group,
+  .frame-parent1 {
+    display: flex;
+    align-items: flex-start;
+    max-width: 95%;
+    margin-top: 35px;
+  }
+  .frame-parent1 {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 125px;
+    text-align: left;
+    font-size: var(--title-h2-size);
+    color: var(--font-high-emphasis);
+    font-family: var(--title-h2);
+  }
+  .about-simple-footer-inner {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 33px;
+    box-sizing: border-box;
+  }
+  .about-simple-footer {
+    width: 100%;
+    position: relative;
+    background-color: var(--bg-gray);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 80px;
+    box-sizing: border-box;
+    gap: 57px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 1200px) {
+    .bg-2,
+    .frame-wrapper {
+      flex: 1;
+    }
+    .frame-group {
+      flex-wrap: wrap;
+    }
+    .frame-parent1 {
+      gap: 62px;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .title {
+      font-size: 38px;
+      line-height: 58px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .title-parent {
+      gap: var(--gap-base);
+    }
+    .bg-2,
+    .frame-wrapper {
+      min-width: 100%;
+    }
+    .frame-parent1 {
+      gap: 31px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .title {
+      font-size: 29px;
+      line-height: 43px;
+    }
+    .text {
+      font-size: 19px;
+      line-height: 29px;
+    }
+    .frame-wrapper {
+      padding-top: 56px;
+      box-sizing: border-box;
+    }
+    .frame-parent1 {
+      gap: var(--gap-base);
+    }
+    .about-simple-footer {
+      gap: 28px;
+    }
+  }

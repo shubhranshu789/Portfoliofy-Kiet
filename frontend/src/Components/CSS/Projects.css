@@ -1,0 +1,104 @@
+
+
+.text6 {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    line-height: 72px;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .frame-child {
+    height: 4px;
+    flex: 1;
+    position: relative;
+    border-radius: var(--br-11xs);
+    background-color: var(--brand-yellow);
+  }
+  .rectangle-wrapper {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 var(--padding-21xl);
+  }
+  .projects-inner,
+  .rectangle-wrapper,
+  .text-group {
+    display: flex;
+    align-items: flex-start;
+  }
+  .text-group {
+    width: 181px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+  }
+  .projects-inner {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+  }
+  .project2-child {
+    height: 524px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    min-width: 322px;
+    min-height: 524px;
+  }
+  .project2,
+  .projects {
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .project2 {
+    align-self: stretch;
+    box-shadow: 0 6px 64px rgba(112, 144, 176, 0.1);
+    border-radius: var(--br-5xl);
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .projects {
+    width: 992px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 80px;
+    gap: var(--gap-61xl);
+    text-align: center;
+    font-size: var(--title-h2-size);
+    color: var(--font-high-emphasis);
+    font-family: var(--title-h2);
+  }
+  @media screen and (max-width: 1050px) {
+    .text6 {
+      font-size: var(--font-size-19xl);
+      line-height: 58px;
+    }
+    .project2-child {
+      flex: 1;
+    }
+    .project2 {
+      flex-wrap: wrap;
+    }
+    .projects {
+      gap: var(--gap-21xl);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .projects {
+      gap: var(--gap-xl);
+      margin-right: -95px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .text6 {
+      font-size: var(--font-size-10xl);
+      line-height: 43px;
+    }
+  }

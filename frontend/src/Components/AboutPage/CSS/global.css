@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-nunito: Nunito;
+  --font-roboto: Roboto;
+  --title-h2: "Playfair Display";
+  --body-18: Raleway;
+  --font-comfortaa: Comfortaa;
+
+  /* font sizes */
+  --font-size-base: 16px;
+  --body-18-size: 18px;
+  --title-h2-size: 48px;
+
+  /* Colors */
+  --bg-gray: #f9faff;
+  --font-medium-emphasis: #828282;
+  --font-high-emphasis: #25282b;
+  --brand-yellow: #fdc435;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-13xl: 32px;
+  --gap-xl: 20px;
+  --gap-884xl: 903px;
+  --gap-432xl: 451px;
+  --gap-207xl: 226px;
+  --gap-111xl: 130px;
+  --gap-11xs: 2px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-5xl: 24px;
+  --padding-xs: 12px;
+  --padding-3xs: 10px;
+  --padding-11xs: 2px;
+
+  /* Border radiuses */
+  --br-11xs: 2px;
+}

@@ -1,0 +1,101 @@
+.psf-box {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-left: -68px;
+}
+
+.psf-container {
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.psf-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.psf-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Initial background color */
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.psf-container:hover .overlay {
+  background: rgba(255, 0, 0, 0.3); /* Color overlay during hover */
+}
+
+.psf-container:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.portfolio-simple-footer,
+.projects-wrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.projects-wrapper {
+  width: 90%;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+}
+.portfolio-simple-footer {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-gray);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 0 80px 120px;
+  gap: 45px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .portfolio-simple-footer {
+    gap: 72px;
+    padding-left: 60px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .portfolio-simple-footer {
+    gap: 36px;
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+
+
+@media (max-width: 750px) {
+  .psf-container {
+    width: 45%; /* Adjust container width for medium screens */
+    height: 40%; /* Adjust container height for better fit */
+  }
+}
+
+/* Media query for screen sizes 450px or less */
+@media (max-width: 450px) {
+  .psf-container {
+    width: 100%; /* Full width on small screens */
+    margin-left: 95px;
+    height: auto; /* Let height adjust naturally */
+  }
+}

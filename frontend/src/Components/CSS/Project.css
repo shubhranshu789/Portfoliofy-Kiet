@@ -1,0 +1,33 @@
+.pexels-elly-fairytale-3823207-icon {
+    height: 526px;
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    min-width: 322px;
+  }
+  .project1 {
+    align-self: stretch;
+    box-shadow: 0 6px 64px rgba(112, 144, 176, 0.1);
+    border-radius: var(--br-5xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 100%;
+    row-gap: 20px;
+    text-align: left;
+    font-size: var(--font-size-21xl);
+    color: var(--font-high-emphasis);
+    font-family: var(--title-h2);
+  }
+  @media screen and (max-width: 1050px) {
+    .pexels-elly-fairytale-3823207-icon {
+      flex: 1;
+    }
+    .project1 {
+      flex-wrap: wrap;
+    }
+  }

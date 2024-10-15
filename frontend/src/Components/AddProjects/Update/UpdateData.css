@@ -1,0 +1,64 @@
+
+
+.updateMainBox {
+    max-width: 600px;
+    margin: 65px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .inputBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  strong {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .inputField, .textAreaField {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .inputField:focus, .textAreaField:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: none;
+  }
+  
+  .textAreaField {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .updateButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .updateButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .updateButton:active {
+    background-color: #3e8e41;
+  }
+  
